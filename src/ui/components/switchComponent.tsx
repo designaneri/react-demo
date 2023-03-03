@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch,styled } from "@mui/material";
+import { Switch, styled } from "@mui/material";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 72,
@@ -10,7 +10,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     padding: 0,
     transform: 'translateX(0)',
     top: 2,
-    left:2,
+    left: 2,
     '&.Mui-checked': {
       color: '#fff',
       transform: 'translateX(37px)',

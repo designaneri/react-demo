@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card,CardActions,CardContent,Button,Typography, styled } from "@mui/material";
+import { Card, CardActions, CardContent, Button, Typography, styled } from "@mui/material";
 
 const CustomCardComponent = styled(Card)(({ theme }) => ({
 
