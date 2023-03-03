@@ -18,7 +18,6 @@ export const CustomCard = (props: any) => {
         </Typography>
         <Typography variant="body2">
           well meaning and kindly.
-          <br />
           {'"a benevolent smile"'}
         </Typography>
       </CardContent>
