@@ -1,45 +1,36 @@
-import React, { Suspense, lazy } from 'react';
-import theme from './AppTheme';
-
+import React from 'react';
+// import theme from './AppTheme';
+import "./App.css";
 import { useState } from "react";
 import { darkTheme } from "./ui/theme/dark";
 import { lightTheme } from "./ui/theme/light";
+
 import {
   createTheme, ThemeProvider,
   styled,
-  Switch,
   Box,
   Typography,
   FormGroup,
-  FormControlLabel,
-  CssBaseline,
+  Grid,
 } from "@mui/material";
+import MaterialUISwitch from './ui/components/switchComponent';
+import CustomCard from './ui/components/cardComponent';
 // import { Route, Routes, Navigate } from 'react-router-dom';
 // import RouteEnum from './Routes/RoutesEnum';
 // const Home = lazy(() => import('./pages/Home'));
-
-const StyledBox = styled(Box)(({ theme }) => ({
-  height: '250px',
-  width: '250px',
-  backgroundColor: theme.palette.neutral?.darker
-}))
-const RedBox = styled(Box)(({ theme }) => ({
-  height: '250px',
-  width: '250px',
-  backgroundColor: theme.palette.redThemePalette?.main
-}))
-const BlueBox = styled(Box)(({ theme }) => ({
-  height: '250px',
-  width: '250px',
-  backgroundColor: theme.colors.blueTheme
+const StyledBackground = styled(Box)(({ theme }) => ({
+  backgroundColor: theme.colors.bodyBg,
+  minHeight: '100vh',
 }))
 
 function App() {
+  
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-
+  
   // This function is triggered when the Switch component is toggled
   const changeTheme = () => {
     setIsDarkTheme(!isDarkTheme);
+    // document.body.style.backgroundColor = theme.palette.colors;
   };
 
   return (
@@ -47,36 +38,27 @@ function App() {
     <React.Fragment>
       <ThemeProvider theme={isDarkTheme ? createTheme(darkTheme) : createTheme(lightTheme)}>
         <div className="App">
+          <StyledBackground>
 {/*         
           <Routes>
             <Route path={RouteEnum.Home} element={<Home />} />
           </Routes>
           */}
-          <FormGroup>
-            <FormControlLabel
-              control={
-                <Switch checked={isDarkTheme} onChange={changeTheme} />
-              }
-              label="Dark Theme"
-            />
-          </FormGroup>
-          <StyledBox />
-          <RedBox />
-          <BlueBox />
-          <Typography variant='h4' component="h1">Hello</Typography>
-          <header className="App-header">
-            <p>
-              Edit <code>src/App.tsx</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
+         
+          <Grid container spacing={2} justifyContent="center" >
+            <Grid item xs={8}>
+              <Box alignItems='center' display='flex' justifyContent='end' sx={{ p: 2}}>
+                <MaterialUISwitch checked={isDarkTheme} onChange={changeTheme} />
+                  <Typography variant="body1" sx={{pl:2}}>
+                    {isDarkTheme ? 'Dark Theme' : 'Light Theme'}
+                  </Typography>
+              </Box>
+            
+              <CustomCard />
+            </Grid>
+          </Grid>
+         
+          </StyledBackground>
         </div>
       </ThemeProvider>
       </React.Fragment>

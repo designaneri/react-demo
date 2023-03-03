@@ -11,7 +11,8 @@ export const lightTheme: ThemeOptions = {
   colors: {
     redTheme: '#ff0000',
     blueTheme: "#0000ff",
-    purpleTheme: "#0023ff"
+    purpleTheme: "#0023ff",
+    bodyBg: "#ffffff"
   },
   breakpoints: {
     values: {
@@ -29,8 +30,8 @@ export const lightTheme: ThemeOptions = {
     },
     neutral: {
       // for new color defining
-      main: colors.grey[500],
-      darker: colors.grey[700]
+      main: colors.yellow[500],
+      darker: colors.yellow[700]
     },
     redThemePalette: {
       main: "#220000",

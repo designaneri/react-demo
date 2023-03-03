@@ -10,7 +10,8 @@ const theme = createTheme({
   colors:{
     redTheme: '#ff0000',
     blueTheme: "#0000ff",
-    purpleTheme: "#0023ff"
+    purpleTheme: "#0023ff",
+    bodyBg: "#333333"
   },
   breakpoints: {
     values: {

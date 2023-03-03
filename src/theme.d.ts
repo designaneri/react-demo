@@ -10,7 +10,8 @@ declare module '@mui/material/styles' {
     colors:{
       redTheme: string,
       blueTheme: string,
-      purpleTheme: string
+      purpleTheme: string,
+      bodyBg: string
     }
   }
   interface ThemeOptions {
@@ -20,7 +21,8 @@ declare module '@mui/material/styles' {
     colors:{
       redTheme: string,
       blueTheme: string,
-      purpleTheme: string
+      purpleTheme: string,
+      bodyBg: string
     }
   }
   // custom color
