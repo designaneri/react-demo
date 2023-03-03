@@ -1,3 +1,4 @@
+import React from 'react';
 import { Switch,styled } from "@mui/material";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
