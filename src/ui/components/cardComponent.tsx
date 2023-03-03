@@ -1,29 +1,42 @@
 import React from 'react';
-import { Card, CardActions, CardContent, Button, Typography, styled } from "@mui/material";
+import { Card, CardActions, CardContent, Button, Typography, styled, Link, Box } from "@mui/material";
 
 const CustomCardComponent = styled(Card)(({ theme }) => ({
-
+  borderRadius: 15,
+}));
+const ProfileImg = styled(Box)(({ theme }) => ({
+  height: 90,
+  width: 90,
+  borderRadius: '100%',
+  marginBottom: 20,
+  overflow: 'hidden',
+  background: theme.colors.contrastColor
 }));
 
 export const CustomCard = (props: any) => {
   const { breadcrumbs } = props;
   return (
     <CustomCardComponent>
+
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
+        <ProfileImg>
+          <img src="https://designaneri.github.io/img/about-img.png" alt="" className="image-offset"/>
+        </ProfileImg>
+        <Typography variant='h4' color="text.primary" gutterBottom>
+          I'm Aneri Shah
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
+        <Typography variant="body1" sx={{mb: 2}}>
+          I’m a Front-End Developer located in India. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
         </Typography>
-        <Typography variant="body2">
-          well meaning and kindly.
-          {'"a benevolent smile"'}
+        <Typography variant="body1" sx={{mb: 2}}>
+          Well-organised person, problem solver, independent employee with high attention to detail.
         </Typography>
+        <Typography variant="body1">
+          <Link href="https://designaneri.github.io/">Learn More about Me</Link>
+        </Typography>
+        {/* <Button size="small" >Learn More about Me</Button> */}
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+     
     </CustomCardComponent>
   );
 };

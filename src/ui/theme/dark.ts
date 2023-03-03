@@ -5,14 +5,9 @@ export const darkTheme: ThemeOptions = {
   typography: {
     fontFamily: ["Poppins", "sans-serif"].join(","),
   },
-  status: {
-    danger: "#123123"
-  },
   colors: {
-    redTheme: '#ff0000',
-    blueTheme: "#0000ff",
-    purpleTheme: "#0023ff",
-    bodyBg: "#333333"
+    bodyBg: "#333333",
+    contrastColor: '#0063aa'
   },
   breakpoints: {
     values: {
@@ -25,17 +20,5 @@ export const darkTheme: ThemeOptions = {
   },
   palette: {
     mode: "dark",
-    secondary: {
-      main: colors.orange[500]
-    },
-    neutral: {
-      // for new color defining
-      main: colors.grey[600],
-      darker: colors.grey[500]
-    },
-    redThemePalette: {
-      main: "#220000",
-    }
-
   },
 };

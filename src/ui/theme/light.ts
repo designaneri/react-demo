@@ -5,14 +5,9 @@ export const lightTheme: ThemeOptions = {
   typography: {
     fontFamily: ["Roboto", "sans-serif"].join(","),
   },
-  status: {
-    danger: "#123123"
-  },
   colors: {
-    redTheme: '#ff0000',
-    blueTheme: "#0000ff",
-    purpleTheme: "#0023ff",
-    bodyBg: "#ffffff"
+    bodyBg: "#ffffff",
+    contrastColor: '#d696ff'
   },
   breakpoints: {
     values: {
@@ -25,17 +20,5 @@ export const lightTheme: ThemeOptions = {
   },
   palette: {
     mode: "light",
-    secondary: {
-      main: colors.orange[500]
-    },
-    neutral: {
-      // for new color defining
-      main: colors.yellow[500],
-      darker: colors.yellow[700]
-    },
-    redThemePalette: {
-      main: "#220000",
-    }
-
   },
 };

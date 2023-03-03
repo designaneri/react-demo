@@ -4,36 +4,26 @@ import React from 'react';
 declare module '@mui/material/styles' {
 
   interface Theme{
-    status:{
-      danger: string
-    },
     colors:{
-      redTheme: string,
-      blueTheme: string,
-      purpleTheme: string,
-      bodyBg: string
+      bodyBg: string,
+      contrastColor: string
     }
   }
   interface ThemeOptions {
-    status:{
-      danger: React.CSSProperties["color"]
-    },
     colors:{
-      redTheme: string,
-      blueTheme: string,
-      purpleTheme: string,
-      bodyBg: string
+      bodyBg: string,
+      contrastColor: string
     }
   }
   // custom color
-  interface Palette{
-    neutral?: PaletteColor,
-    redThemePalette?: PaletteColor,
-  }
-  interface PaletteOptions{
-    neutral?: PaletteColorOptions,
-    redThemePalette?: PaletteColorOptions,
-  }
+  // interface Palette{
+  //   neutral?: PaletteColor,
+  //   redThemePalette?: PaletteColor,
+  // }
+  // interface PaletteOptions{
+  //   neutral?: PaletteColorOptions,
+  //   redThemePalette?: PaletteColorOptions,
+  // }
 
   // darker color
   interface SimplePaletteColorOptions{

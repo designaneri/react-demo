@@ -46,7 +46,7 @@ function App() {
           */}
          
           <Grid container spacing={2} justifyContent="center" >
-            <Grid item xs={8}>
+            <Grid item xs={4}>
               <Box alignItems='center' display='flex' justifyContent='end' sx={{ p: 2}}>
                 <MaterialUISwitch checked={isDarkTheme} onChange={changeTheme} />
                   <Typography variant="body1" sx={{pl:2}}>

@@ -4,14 +4,9 @@ const theme = createTheme({
   typography: {
     fontFamily: ["Train One", "cursive"].join(","),
   },
-  status: {
-    danger: "#123123"
-  },
   colors:{
-    redTheme: '#ff0000',
-    blueTheme: "#0000ff",
-    purpleTheme: "#0023ff",
-    bodyBg: "#333333"
+    bodyBg: "#333333",
+    contrastColor: '#d696ff'
   },
   breakpoints: {
     values: {
@@ -23,17 +18,17 @@ const theme = createTheme({
     },
   },
   palette: {
-    secondary: {
-      main: colors.orange[500]
-    },
-    neutral:{
-      // for new color defining
-      main: colors.grey[500],
-      darker: colors.grey[700]
-    },
-    redThemePalette:{
-      main: "#220000",
-    }
+    // secondary: {
+    //   main: colors.orange[500]
+    // },
+    // neutral:{
+    //   // for new color defining
+    //   main: colors.grey[500],
+    //   darker: colors.grey[700]
+    // },
+    // redThemePalette:{
+    //   main: "#220000",
+    // }
     
   },
 });
