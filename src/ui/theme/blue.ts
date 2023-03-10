@@ -1,12 +1,12 @@
 import { ThemeOptions } from "@mui/material";
 
-export const lightTheme: ThemeOptions = {
+export const blueTheme: ThemeOptions = {
   typography: {
-    fontFamily: ["Roboto", "sans-serif"].join(","),
+    fontFamily: ["Poppins", "sans-serif"].join(","),
   },
   colors: {
-    bodyBg: "#ffffff",
-    contrastColor: '#d696ff'
+    bodyBg: "#6B95BC",
+    contrastColor: '#BF628E'
   },
   breakpoints: {
     values: {
@@ -16,8 +16,5 @@ export const lightTheme: ThemeOptions = {
       lg: 1200,
       xl: 1440
     },
-  },
-  palette: {
-    mode: "light",
   },
 };

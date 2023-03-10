@@ -4,6 +4,7 @@ import { Card, CardActions, CardContent, Button, Typography, styled, Link, Box }
 const CustomCardComponent = styled(Card)(({ theme }) => ({
   borderRadius: 15,
 }));
+
 const ProfileImg = styled(Box)(({ theme }) => ({
   height: 90,
   width: 90,
@@ -13,11 +14,9 @@ const ProfileImg = styled(Box)(({ theme }) => ({
   background: theme.colors.contrastColor
 }));
 
-export const CustomCard = (props: any) => {
-  const { breadcrumbs } = props;
+export const CustomCard = () => {
   return (
     <CustomCardComponent>
-
       <CardContent>
         <ProfileImg>
           <img src="https://designaneri.github.io/img/about-img.png" alt="" className="image-offset"/>
@@ -34,7 +33,6 @@ export const CustomCard = (props: any) => {
         <Typography variant="body1">
           <Link href="https://designaneri.github.io/">Learn More about Me</Link>
         </Typography>
-        {/* <Button size="small" >Learn More about Me</Button> */}
       </CardContent>
      
     </CustomCardComponent>

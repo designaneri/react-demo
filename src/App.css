@@ -7,4 +7,5 @@ body {
   max-width: 110px;
   margin-left: -10px;
   margin-top: -20px;
+  filter: brightness(1.5);
 }

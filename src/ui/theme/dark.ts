@@ -1,5 +1,4 @@
 import { ThemeOptions } from "@mui/material";
-import { colors } from '@mui/material';
 
 export const darkTheme: ThemeOptions = {
   typography: {
